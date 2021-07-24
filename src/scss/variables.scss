@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+style,
+script,
+head {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+}
+
+$color-white: #ffffff;
+$color-black: #191414;
+$color-primary-green: #1ed760;
+$color-secondary-green: #1db954;
+$color-dimmed-white : rgba(255, 255, 255, 0.8);
+$color-warning : #edb95e;
+$color-error : #e23636;
+$color-success : #82dd55;
+$color-grey : #282828;
+$color-blue : #2e7acc;
+
+@mixin flex($justify-content, $align-items, $flex-direction : 'row', $wrap : 'no-wrap'){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $wrap;
+}
+
+.loading{
+    width: 100%;
+    height: calc(100vh - 5rem);
+    color: white;
+    background-color: $color-black;
+    @include flex(center, center, row, wrap);
+}

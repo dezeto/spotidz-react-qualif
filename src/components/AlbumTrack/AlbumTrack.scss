@@ -1,0 +1,48 @@
+@import '../../scss/variables.scss';
+
+.track-card {
+    margin: 1rem 0rem;
+    box-sizing: border-box;
+    @include flex(center, center, row, wrap);
+
+    &-header {
+        @include flex(space-between, center, row, wrap);
+        width: 100%;
+        // background-color: blue;
+    }
+
+    width: 100%;
+
+    &-image {
+        width: 15rem;
+    }
+
+    &-title {
+        flex: 1;
+        // background-color: blue;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-align: left;
+        margin: .5rem;
+    }
+    &-thumbnail{
+        width: 15rem;
+        img {
+            width: 15rem;
+        }
+    }
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}

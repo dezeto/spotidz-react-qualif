@@ -1,0 +1,29 @@
+@import '../../scss/variables.scss';
+
+.favorite-main{
+    width: 100%;
+    // margin-top: 4rem;
+    text-align: center;
+    background-color: $color-black;
+    min-height: calc(100vh - 5rem);
+    height: 100%;
+    padding: 5rem 0rem 5rem 0rem;
+    color: $color-white;
+    box-sizing: border-box;
+    @include flex(center, center, row, wrap);
+    h3{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.favorite-card{
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    // background-color: blue;
+    box-sizing: border-box;
+    width: 16rem;
+    @include flex(space-evenly, center, column, wrap);
+}
+

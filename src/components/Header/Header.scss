@@ -1,0 +1,39 @@
+@import '../../scss/variables.scss';
+
+header{
+    position: fixed;
+    top: 0;
+    height: 4rem;
+    width: 100vw;
+    overflow-x: hidden;
+    @include flex(space-between, center, wrap);
+    padding: 1rem;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+    z-index: 10;
+    .title{
+        font-weight: 800;
+        flex: 1;
+        color: $color-white;
+        // background-color: blue;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .search-bar{
+        // background-color: blue;
+        flex: 1.5;
+        box-sizing: border-box;
+        input{
+            padding: .2rem .5rem;
+            box-sizing: border-box;
+            width: 100%;
+            border: 0;
+            border-radius: .5rem;
+        }
+    }
+    
+}

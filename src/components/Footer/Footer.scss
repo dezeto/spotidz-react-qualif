@@ -1,0 +1,28 @@
+@import '../../scss/variables.scss';
+
+footer{
+    position: fixed;
+    width: 100vw;
+    height: 5rem;
+    // overflow: hidden;
+    bottom: 0;
+    @include flex(space-around, center, row, no-wrap);
+    // background-color: magenta;
+    background-color: $color-grey;
+    padding: .5rem;
+    box-sizing: border-box;
+    .footer-item{
+        color: $color-white;
+        // background-color: blue;
+        text-decoration: none;
+        padding: 1rem;
+        font-size: 1rem;
+        @include flex(center, center, column, no-wrap);
+        .title{
+            margin-top: .5rem;
+            font-size: .7rem;
+            text-align: center;
+        }
+        text-align: center;
+    }
+}
