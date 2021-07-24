@@ -20,13 +20,15 @@ function AlbumTrack(props){
     useEffect(() => {
         var filteredFav
         let favorites = JSON.parse(localStorage.getItem('favorites'));
-        favorites.some(e => {
-            if (e.id === id){
-                setLiked(true);
-                console.log(liked)
-                return true;
-            }
-        });
+        if (favorites === null){
+            favorites.some(e => {
+                if (e.id === id){
+                    setLiked(true);
+                    // console.log(liked)
+                    return true;
+                }
+            });
+        }
     }, [favoriteItem]);
     
 

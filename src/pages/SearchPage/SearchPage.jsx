@@ -14,15 +14,15 @@ function SearchPage(){
     let textInputValue;
     
     const searchData = (e) =>{
-        console.log(e.target.value);
+        // console.log(e.target.value);
         textInputValue = e.target.value;
         setText(textInputValue.toString());
-        console.log(data.artist.albums);
+        // console.log(data.artist.albums);
         let newData;
         newData = data.artist.albums.filter(e => {
             return e.name.toLowerCase().includes(textInputValue.trim().toLowerCase());
         });
-        console.log(newData);
+        // console.log(newData);
 
         if (textInputValue === ""){
             // alert('test');
